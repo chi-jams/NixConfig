@@ -5,7 +5,7 @@ compinit
 
 setopt correctall
 
-autoload -U prompinit
+autoload -U promptinit
 promptinit
 
 export PS1="[%n@%M %~]> "
