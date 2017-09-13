@@ -155,5 +155,6 @@ bar {
         status_command i3status
 }
 
+exec --no-startup-id xautolock -time 1 -locker 'i3lock'
 exec xrandr --dpi 200
 exec ~/.fehbg &
