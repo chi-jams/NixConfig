@@ -19,3 +19,4 @@ setopt hist_ignore_space
 
 alias ll="ls -al"
 alias brightnessto="sudo tee /sys/class/backlight/intel_backlight/brightness <<< "
+alias kblightto="sudo tee /sys/class/leds/asus::kbd_backlight/brightness <<< "
