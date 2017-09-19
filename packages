@@ -7,4 +7,9 @@ lightdm
 chromium
 lightdm-kde-greeter
 xorg-xinit
+dmenu
+ttf-inconsolata
+ruby
+python
+feh
 

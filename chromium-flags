@@ -1,2 +1,2 @@
-
+# ~/.config/chromium-flags.conf
 --force-device-scale-factor=1.8
