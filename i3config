@@ -156,5 +156,4 @@ bar {
 }
 
 exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000'
-exec xrandr --dpi 200
 exec ~/.fehbg &
