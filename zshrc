@@ -18,4 +18,4 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
 alias ll="ls -al"
-
+alias brightnessto="sudo tee /sys/class/backlight/intel_backlight/brightness <<< "
