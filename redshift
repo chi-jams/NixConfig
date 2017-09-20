@@ -1,5 +1,5 @@
 
-# /home/daichij/.config/redshift.conf
+; /home/daichij/.config/redshift.conf
 [redshift]
 temp-day=6500
 temp-night=2700
