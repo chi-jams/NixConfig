@@ -156,5 +156,5 @@ bar {
         status_command i3status
 }
 
-exec --no-startup-id xautolock -time 5 -locker 'i3lock -c 000000'
+exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
 exec ~/.fehbg &
