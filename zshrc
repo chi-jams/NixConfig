@@ -8,7 +8,7 @@ setopt correctall
 autoload -U promptinit
 promptinit
 
-export PS1="[%n@%M %~]> "
+export PS1="%B[%n@%M %~]>%b "
 
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"

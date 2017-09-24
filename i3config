@@ -158,5 +158,6 @@ bar {
         status_command i3status
 }
 
+exec compton -GCb
 exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
 exec ~/.fehbg &
