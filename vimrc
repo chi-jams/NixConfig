@@ -5,9 +5,10 @@
 
 " Syntax highlighting
 syntax enable
-colorscheme monokai
-
+"colorscheme monokai
+colo industry
 set tabstop=4
+set expandtab
 
 set number
 
