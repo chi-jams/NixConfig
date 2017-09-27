@@ -4,12 +4,8 @@
 "set nocompatible
 
 " Syntax highlighting
-syntax on
-		
-colo industry
-
-" Makes backspace work again since it broke for some reason
-set backspace=2
+syntax enable
+colorscheme monokai
 
 set tabstop=4
 
