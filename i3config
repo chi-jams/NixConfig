@@ -159,5 +159,6 @@ bar {
 }
 
 exec compton -GCb
+exec redshift &
 exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
 exec ~/.fehbg &
