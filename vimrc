@@ -5,8 +5,8 @@
 
 " Syntax highlighting
 syntax enable
-"colorscheme monokai
-colo industry
+colorscheme monokai
+
 set tabstop=4
 set expandtab
 
