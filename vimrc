@@ -21,3 +21,6 @@ set ruler
 set colorcolumn=80
 
 inoremap <S-Tab> <C-d>
+
+" This is to prevent python from untabbing when typing a '#'
+inoremap # X#
