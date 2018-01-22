@@ -5,6 +5,7 @@
 	"ignored_packages":
 	[
 		"SublimeLinter",
+		"SublimeLinter-pylint",
 		"Vintage"
 	],
 	"remember_open_files": false,

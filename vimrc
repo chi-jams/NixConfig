@@ -8,8 +8,9 @@ syntax enable
 colorscheme monokai
 
 set shiftwidth=4
-set tabstop=4
+set tabstop=8
 set expandtab
+set smarttab
 
 set autoindent
 set smartindent
