@@ -8,7 +8,8 @@ syntax enable
 colorscheme monokai
 
 set shiftwidth=4
-set tabstop=8
+"set tabstop=8
+set tabstop=4
 set expandtab
 set smarttab
 
@@ -25,3 +26,5 @@ inoremap <S-Tab> <C-d>
 
 " This is to prevent python from untabbing when typing a '#'
 inoremap # X#
+
+autocmd FileType html setlocal shiftwidth=2 tabstop=2

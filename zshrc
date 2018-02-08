@@ -30,3 +30,6 @@ bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
 bindkey -M vicmd "k" up-line-or-beginning-search
 bindkey -M vicmd "j" down-line-or-beginning-search
+
+# Temp
+alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
