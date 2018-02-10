@@ -3,3 +3,5 @@
 	email = djameson@mines.edu
 [credential]
 	helper = cache --timeout 3600
+[diff]
+	tool = vimdiff
