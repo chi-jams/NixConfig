@@ -1,0 +1,5 @@
+[user]
+	name = daichij
+	email = djameson@mines.edu
+[credential]
+	helper = cache --timeout 3600
