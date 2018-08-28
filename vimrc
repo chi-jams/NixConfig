@@ -24,6 +24,8 @@ set colorcolumn=80
 
 set mouse=a
 
+set nowrap
+
 inoremap <S-Tab> <C-d>
 
 " This is to prevent python from untabbing when typing a '#'
