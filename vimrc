@@ -17,14 +17,11 @@ set autoindent
 set smartindent
 
 set number
+set relativenumber
 
 set ruler
 
 set colorcolumn=80
-
-set mouse=a
-
-set nowrap
 
 inoremap <S-Tab> <C-d>
 
