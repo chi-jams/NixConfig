@@ -163,6 +163,7 @@ exec --no-startup-id xrandr --output DP-2 --auto --left-of DP-4
 exec --no-startup-id xrandr --output DP-1 --auto --right-of DP-4
 
 exec compton -GCb
+exec chromium &
 exec redshift -t 6500K:2000K &
 exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
 exec ~/.fehbg &
