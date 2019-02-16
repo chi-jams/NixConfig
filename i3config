@@ -153,6 +153,17 @@ bindsym $mod+y mode "resize"
 
 bindsym $mod+Shiftx exec '/home/daichij/NixConfig/lock.sh'
 
+# Pulse Audio controls
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle # mute sound
+
+# Media player controls
+bindsym XF86AudioPlay exec playerctl play
+bindsym XF86AudioPause exec playerctl pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
@@ -164,6 +175,6 @@ exec --no-startup-id xrandr --output DP-1 --auto --right-of DP-4
 
 exec compton -GCb
 exec chromium &
-exec redshift -t 6500K:2000K &
+exec redshift -t 6500K:1500K &
 exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
 exec ~/.fehbg &

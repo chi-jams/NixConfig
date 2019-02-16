@@ -17,6 +17,7 @@ export SAVEHIST=$HISTSIZE
 setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
+alias ls="ls --color=auto"
 alias ll="ls -al"
 alias llc="clear && ls -al"
 alias brightnessto="sudo tee /sys/class/backlight/intel_backlight/brightness <<< "
