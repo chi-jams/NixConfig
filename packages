@@ -1,6 +1,6 @@
 networkmanager
 vim
-i3
+i3-wm
 dmenu
 i3lock
 zsh
@@ -10,8 +10,6 @@ chromium
 lightdm-gtk-greeter
 xorg-xinit
 ttf-inconsolata
-ruby
 python
 feh
 xautolock
-sublime-text
