@@ -38,3 +38,5 @@ bindkey "^[[3~" delete-char
 
 # Temp
 alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
+alias dlatex="pdflatex --halt-on-error"
+alias zath="zathura"

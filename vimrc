@@ -104,6 +104,8 @@ set textwidth=80
 set hlsearch
 set incsearch
 
+set spell spelllang=en_us
+
 inoremap <S-Tab> <C-d>
 
 " This is to prevent python from untabbing when typing a '#'
