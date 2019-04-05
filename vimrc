@@ -17,7 +17,9 @@ Plugin 'ctrlpvim/ctrlp.vim' " File searcher
 " Plugin 'jiangmiao/auto-pairs'
 Plugin 'luochen1990/rainbow'
 "Plugin 'terryma/vim-multiple-cursors'
+
 Plugin 'rcabralc/monokai.vim'
+Plugin 'KeitaNakamura/neodark.vim'
 
 " Language Support
 Plugin 'leafgarland/typescript-vim'
@@ -74,15 +76,17 @@ let g:ctrlp_prompt_mappings = {
     \ 'AcceptSelection("e")': ['<c-v>', '<2-LeftMouse>'],
     \ }
 
+let g:neodark#terminal_transparent = 1
+
 " Monokai stuff
-let g:monokai_colorscheme#output_srgb = 0
-if !has('gui_running')
-    let g:monokai_colorscheme#transparent_background = 1
-endif
+"let g:monokai_colorscheme#output_srgb = 0
+"if !has('gui_running')
+"    let g:monokai_colorscheme#transparent_background = 1
+"endif
 
 " Syntax highlighting
 syntax enable
-colorscheme monokai
+colorscheme neodark
 
 set shiftwidth=4
 "set tabstop=8

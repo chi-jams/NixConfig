@@ -176,5 +176,7 @@ exec --no-startup-id xrandr --output DP-1 --auto --right-of DP-4
 exec compton -GCb --config ~/NixConfig/compton.conf
 exec chromium &
 exec redshift -t 6500K:1500K &
-exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
+exec xidlehook --not-when-fullscreen \
+     --timer primary 300 '/home/daichij/NixConfig/lock.sh' '' \
+     --timer normal 720 'systemctl suspend' ''
 exec ~/.fehbg &
