@@ -115,4 +115,4 @@ inoremap <S-Tab> <C-d>
 " This is to prevent python from untabbing when typing a '#'
 inoremap # X#
 
-autocmd FileType ts setlocal shiftwidth=2
+autocmd FileType typescript setlocal shiftwidth=2 tabstop=2
