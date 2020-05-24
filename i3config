@@ -170,12 +170,13 @@ bar {
         status_command i3status
 }
 
-exec --no-startup-id xrandr --output DP-2 --auto --left-of DP-4
-exec --no-startup-id xrandr --output DP-1 --auto --right-of DP-4
+#exec --no-startup-id xrandr --output DP-2 --auto --left-of DP-4
+#exec --no-startup-id xrandr --output DP-1 --auto --right-of DP-4
+exec ~/NixConfig/nvidia-temp.sh
 
 exec compton -GCb --config ~/NixConfig/compton.conf
 exec firefox &
-exec redshift -t 6500K:1500K &
+exec redshift -l 39.736970:-105.136448 -t 6500K:1500K &
 exec xidlehook --not-when-fullscreen --not-when-audio\
      --timer primary 300 '/home/daichij/NixConfig/lock.sh' '' \
      --timer normal 720 'systemctl suspend' ''

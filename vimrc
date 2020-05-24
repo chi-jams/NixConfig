@@ -116,3 +116,4 @@ inoremap <S-Tab> <C-d>
 inoremap # X#
 
 autocmd FileType typescript setlocal shiftwidth=2 tabstop=2
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
