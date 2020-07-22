@@ -41,4 +41,8 @@ alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
 alias dlatex="pdflatex --halt-on-error"
 alias zath="zathura"
 
+# Pulseaudio loopback
+alias play_mic="pactl load-module module-loopback latency_msec=1"
+alias stop_mic="pactl unload-module module-loopback"
+
 fortune|cowsay -f ~/NixConfig/cat.cow|lolcat
