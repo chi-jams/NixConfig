@@ -158,9 +158,9 @@ bindsym $mod+y mode "resize"
 bindsym $mod+Shiftx exec '/home/daichij/NixConfig/lock.sh'
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.pci-0000_00_1b.0.analog-stereo -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute alsa_output.pci-0000_00_1b.0.analog-stereo toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume alsa_output.usb-Logitech_Logitech_G430_Gaming_Headset-00.analog-stereo -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-source-mute alsa_input.usb-Logitech_Logitech_G430_Gaming_Headset-00.mono-fallback toggle # mute sound
 
 # Media player controls
 bindsym XF86AudioPlay exec playerctl play
