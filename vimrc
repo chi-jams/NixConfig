@@ -24,6 +24,9 @@ Plugin 'KeitaNakamura/neodark.vim'
 " Language Support
 Plugin 'leafgarland/typescript-vim'
 
+" Md previewer
+Plugin 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
