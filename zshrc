@@ -42,19 +42,3 @@ if [ ! -S ~/.ssh/ssh_auth_sock ]; then
 fi
 export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
 ssh-add -l | grep "The agent has no identities" && ssh-agent
-
-# Temp
-alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
-alias dlatex="pdflatex --halt-on-error"
-alias zath="zathura"
-
-# Pulseaudio loopback
-alias play_mic="pactl load-module module-loopback latency_msec=1"
-alias stop_mic="pactl unload-module module-loopback"
-
-fortune|cowsay -f ~/NixConfig/cat.cow|lolcat
-
-eval "$(rbenv init -)"
-
-# Set up Node Version Manager
-source /usr/share/nvm/init-nvm.sh
