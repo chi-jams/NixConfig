@@ -8,7 +8,10 @@ setopt correctall
 autoload -U promptinit
 promptinit
 
-export PS1="%B[%n@%M %~]>%b "
+# export PS1="%B[%n@%M %~]>%b "
+
+autoload -U colors && colors
+PROMPT="%n@%{$fg_no_bold[red]%}$NAMEANDROLE%{$reset_color%} %{$fg_no_bold[cyan]%}%~%{$reset_color%}> "
 
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
