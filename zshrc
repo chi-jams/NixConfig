@@ -11,7 +11,7 @@ promptinit
 # export PS1="%B[%n@%M %~]>%b "
 
 autoload -U colors && colors
-PROMPT="%n@%{$fg_no_bold[red]%}$NAMEANDROLE%{$reset_color%} %{$fg_no_bold[cyan]%}%~%{$reset_color%}> "
+PROMPT="%n@%{$fg_no_bold[yellow]%}%M%{$reset_color%} %{$fg_no_bold[cyan]%}%~%{$reset_color%}> "
 
 export HISTSIZE=2000
 export HISTFILE="$HOME/.history"
@@ -39,11 +39,12 @@ bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
 
+export POTAT=1
 if [ $POTAT ]; then
-    if [ ! -S ~/.ssh/ssh_auth_sock ]; then
+    if ps -p $SSH_AGENT_PID > /dev/null; then
+	echo "ssh-agent is already running"
+    else
         eval `ssh-agent`
-        ln -sf "$SSH_AUTH_SOCK" ~/.ssh/ssh_auth_sock
+	ssh-add -k
     fi
-    export SSH_AUTH_SOCK=~/.ssh/ssh_auth_sock
-    ssh-add -l | grep "The agent has no identities" && ssh-agent
 fi
