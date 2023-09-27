@@ -1,5 +1,7 @@
 #!/bin/zsh
 
+plugins=(git ssh-agent)
+
 autoload -U compinit
 compinit
 
