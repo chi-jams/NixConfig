@@ -109,6 +109,8 @@ inoremap <S-Tab> <C-d>
 " This is to prevent python from untabbing when typing a '#'
 inoremap # X#
 
+set spell spelllang=en_us
+
 " Vim apparently starts in replace mode due to some ambiguous utf-8 characters,
 " which this fixes
 " https://superuser.com/questions/1284561/why-is-vim-starting-in-replace-mode

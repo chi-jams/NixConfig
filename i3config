@@ -160,6 +160,10 @@ bar {
 }
 
 exec compton -GCb
-exec redshift -t 6500K:2000K &
+exec xrandr --output eDP1 --auto
+exec xrandr --output eDP1 --mode 1920x1080
+exec redshift -l 39.736970:-105.136448 -t 6500K:1500K &
 exec --no-startup-id xautolock -time 5 -locker '/home/daichij/NixConfig/lock.sh'
+exec i3-sensible-terminal
+exec firefox &
 exec ~/.fehbg &
