@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+export ZSH="$HOME/.oh-my-zsh"
+
+ZSH_THEME="agnoster"
+
 plugins=(git ssh-agent)
 
 autoload -U compinit
@@ -39,3 +43,7 @@ bindkey "^[[3~" delete-char
 
 # Temp
 alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
+
+source $ZSH/oh-my-zsh.sh
+
+zstyle :omz:plugins:ssh-agent identities id_ed25519
