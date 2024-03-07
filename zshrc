@@ -4,7 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
 
-plugins=(git ssh-agent zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting)
 
 autoload -U compinit
 compinit
@@ -54,8 +54,6 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 source $ZSH/oh-my-zsh.sh
-
-zstyle :omz:plugins:ssh-agent identities id_ed25519
 
 alias catfortune='fortune -s -n 40 |cowsay -f ~/NixConfig/cat.cow |lolcat'
 catfortune
