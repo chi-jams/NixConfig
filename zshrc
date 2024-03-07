@@ -4,7 +4,7 @@ export ZSH="$HOME/.oh-my-zsh"
 
 ZSH_THEME="agnoster"
 
-plugins=(git ssh-agent)
+plugins=(git ssh-agent zsh-syntax-highlighting)
 
 autoload -U compinit
 compinit
@@ -43,6 +43,18 @@ bindkey "^[[3~" delete-char
 
 # Temp
 alias ssh_to_hpc="ssh djameson@eecs-hpc-1.mines.edu"
+
+# enable color support of ls and also add handy aliases
+if [ -x /usr/bin/dircolors ]; then
+    test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+    alias ls='ls --color=auto'
+    #alias dir='dir --color=auto'
+    #alias vdir='vdir --color=auto'
+
+    alias grep='grep --color=auto'
+    alias fgrep='fgrep --color=auto'
+    alias egrep='egrep --color=auto'
+fi
 
 source $ZSH/oh-my-zsh.sh
 
