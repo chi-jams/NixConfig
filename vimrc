@@ -14,6 +14,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'w0rp/ale'
 Plugin 'scrooloose/nerdtree' " File explorer
 Plugin 'ctrlpvim/ctrlp.vim' " File searcher
+Plugin 'junegunn/fzf' " File search across project
+Plugin 'junegunn/fzf.vim'
+
 " Plugin 'jiangmiao/auto-pairs'
 Plugin 'luochen1990/rainbow'
 "Plugin 'terryma/vim-multiple-cursors'
@@ -56,6 +59,8 @@ let g:NERDTreeIgnore=[
 
 map <C-Tab> :tabn<CR>
 map <C-S-Tab> :tabp<CR>
+
+nnoremap <C-S> :Rg<CR>
 
 " Ale stuff
 let g:ale_completion_enabled = 1
