@@ -120,3 +120,5 @@ set spell spelllang=en_us
 " which this fixes
 " https://superuser.com/questions/1284561/why-is-vim-starting-in-replace-mode
 set t_u7=
+
+source ~/NixConfig/vimrc.custom
