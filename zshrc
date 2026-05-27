@@ -59,6 +59,9 @@ source $ZSH/oh-my-zsh.sh
 zstyle :omz:plugins:ssh-agent identities id_ed25519
 
 alias catfortune='fortune -s -n 40 |cowsay -f ~/NixConfig/cat.cow |lolcat'
-catfortune
+
+if command -v fortune cowsay lolcat >/dev/null 2>&1; then
+    catfortune
+fi
 
 . ~/NixConfig/zshrc.custom
