@@ -1,6 +1,7 @@
 #!/bin/zsh
 
 export ZSH="$HOME/.oh-my-zsh"
+export VISUAL="gvim -f"
 export EDITOR="vim"
 
 ZSH_THEME="agnoster"
