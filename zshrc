@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 #!/bin/zsh
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -67,7 +60,6 @@ source $ZSH/oh-my-zsh.sh
 zstyle :omz:plugins:ssh-agent identities id_ed25519
 
 alias catfortune='fortune -s -n 40 |cowsay -f ~/NixConfig/cat.cow |lolcat'
-
 if command -v fortune cowsay lolcat >/dev/null 2>&1; then
     catfortune
 fi
