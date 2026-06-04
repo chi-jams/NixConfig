@@ -4,6 +4,8 @@
 
 # Mostly used for devices that don't have zsh available, such as embedded
 # devices
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 __prompt_command() {
     local exit_code=$?
