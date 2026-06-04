@@ -3,5 +3,5 @@ family = "MesloLGS NF"
 
 [general]
 import = [
-    "~/.config/alacritty/themes/themes/gnome_terminal.toml"
+    "~/NixConfig/galaxy.toml"
 ]
