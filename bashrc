@@ -10,13 +10,13 @@ export LC_ALL=en_US.UTF-8
 __prompt_command() {
     local exit_code=$?
 
-    # Colors
-    local cyan='\033[36m'
-    local green='\033[32m'
-    local red='\033[31m'
-    local yellow='\033[33m'
-    local magenta='\033[35m'
-    local reset='\033[0m'
+    # Colors (wrapped in \001/\002 so readline knows they're non-printing)
+    local cyan=$'\001\033[36m\002'
+    local green=$'\001\033[32m\002'
+    local red=$'\001\033[31m\002'
+    local yellow=$'\001\033[33m\002'
+    local magenta=$'\001\033[35m\002'
+    local reset=$'\001\033[0m\002'
 
     # Components
     local user_host="${USER}@${HOSTNAME%%.*}"
